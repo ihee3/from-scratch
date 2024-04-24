@@ -1,6 +1,6 @@
 import sys, os
 sys.path.append(os.pardir)
-from activate_functions import *
+from activation_functions import *
 from errors import *
 from gradients import numerical_gradient
 
