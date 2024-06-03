@@ -66,7 +66,8 @@ class Pooling:
         self.dxW = dout
         self.dW = np.dot(self.col.T, dout)
         self.dW = self.dW.transpose(1, 0).reshape(FN, C, FH, FW)
+        
         dcol = np.dot(dout, self.col_w.T)
-        dx = None
+        dx = col2im(dcol, self.x.shape, FH, FW, self.stride, self.pad)
 
         return dx 
