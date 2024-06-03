@@ -1,2 +1,1 @@
-ref) 'Deep learning from scratch'
-![Uploading cover_image.jpg…]()
+ref) 'Deep learning from scratch', O'RELLY
